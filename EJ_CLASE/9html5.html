@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang = es>
+
+<html>
+
+	<head>
+		<title> index </title>
+		<meta charset = "UFT-8">
+	</head>
+
+	<body style="text-align:center;">
+	
+		<header><h1><b> Este es el Header </h1></b></header>
+		
+		<br></br>
+		
+		<nav>
+		<a href="index.html"><h3> Vuelve al índice </h3></a>
+		</nav>
+		
+		<br></br>
+		<br></br>
+		
+			<p>Mira que bonito el audio</p>
+		<audio controls>
+		<source src="audio/heheboi.mp4" type="audio/mp4">
+		</audio>
+		
+		<br></br>
+		<br></br>
+		
+			<p>Ahora un Canvas</p>
+		<canvas id="myCanvas" width="300" height="100" style="border:1px solid #000000;">
+		
+			<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+
+			ctx.font = "30px Arial";
+			ctx.fillText("Hemorroides",65,60);
+			
+			const canvass = document.getElementById("myCanvas");
+			const ctxs= canvas.getContext("2d");
+
+			ctx.beginPath();
+			ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+			ctx.stroke();
+			</script>
+		</canvas>
+		
+		<br></br>
+		<br></br>
+		
+		<p>No es un gif, es un vídeo</p>
+		<video src="video/gandalf.mp4"width="450"height="312"autoplay controls>
+		<source src="video/gandalf.mp4" type="video/mp4"/>
+		</video>
+		
+		
+		<footer><h2><b> Este es el Footer </h2></b></footer>
+	</body>
+	
+</html>
+
