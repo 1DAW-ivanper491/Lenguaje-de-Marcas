@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang = es>
+
+<html>
+
+	<head>
+		<title> Tablero </title>
+		<meta charset = "UFT-8">
+	</head>
+
+	<body style="text-align:center;">
+		<a href="index.html"><h3> Volver al índice </h3></a>
+		
+		<h2>El Tablero</h2>
+
+		<br></br>
+		
+		<canvas id="myCanvas" width="800" height="800" style="border:10px solid grey;"></canvas>
+
+		<script>
+			const c = document.getElementById("myCanvas");
+			const ctx = c.getContext("2d");
+
+			ctx.fillRect(0, 0, 100, 100);
+			ctx.fillRect(0, 200, 100, 100);
+			ctx.fillRect(0, 400, 100, 100);
+			ctx.fillRect(0, 600, 100, 100);
+			ctx.fillRect(200, 0, 100, 100);
+			ctx.fillRect(400, 0, 100, 100);
+			ctx.fillRect(600, 0, 100, 100);
+			ctx.fillRect(100, 100, 100, 100);
+			ctx.fillRect(100, 300, 100, 100);
+			ctx.fillRect(100, 500, 100, 100);
+			ctx.fillRect(100, 700, 100, 100);
+			ctx.fillRect(200, 200, 100, 100);
+			ctx.fillRect(200, 400, 100, 100);
+			ctx.fillRect(200, 600, 100, 100);
+			ctx.fillRect(300, 300, 100, 100);
+			ctx.fillRect(300, 100, 100, 100);
+			ctx.fillRect(300, 500, 100, 100);
+			ctx.fillRect(300, 700, 100, 100);
+			ctx.fillRect(400, 200, 100, 100);
+			ctx.fillRect(400, 400, 100, 100);
+			ctx.fillRect(400, 600, 100, 100);
+			ctx.fillRect(500, 100, 100, 100);
+			ctx.fillRect(500, 300, 100, 100);
+			ctx.fillRect(500, 500, 100, 100);
+			ctx.fillRect(500, 700, 100, 100);
+			ctx.fillRect(600, 200, 100, 100);
+			ctx.fillRect(600, 400, 100, 100);
+			ctx.fillRect(600, 600, 100, 100);
+			ctx.fillRect(700, 100, 100, 100);
+			ctx.fillRect(700, 700, 100, 100);
+			ctx.fillRect(700, 300, 100, 100);
+			ctx.fillRect(700, 500, 100, 100);
+			ctx.fillRect(700, 700, 100, 100);
+		</script>
+		
+		<br></br>
+		
+		<h2>El SVG</h2>
+		
+		<svg height="130" width="500" >
+		<defs>
+			<linearGradient id="grad1">
+			<stop offset="0%" stop-color="yellow" />
+			<stop offset="100%" stop-color="red" />
+			</linearGradient>
+		</defs>
+		<ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+		<text fill="#ffffff" font-size="45" font-family="Consolas" x="64" y="86">IPD</text>
+  		</svg>
+	
+		<br></br>
+		
+		<embed type="text/html" src="3enlaces.html" width="500" height="200">
+
+		<br></br>
+	
+	</body>
+</html>

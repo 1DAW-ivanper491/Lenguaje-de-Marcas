@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Principal</title>
+
+<link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Link de referencia a Google Fonts para obtener fuentes ajenas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+<style>
+
+/*Para conseguir las fuentes*/
+/*Fuente grence-gotisch:  font-family: "Grenze Gotisch", serif;   */
+/*Fuente almendra-sc:     font-family: "Almendra SC", serif;      */
+/*Fuente garamond:        font-family: "EB Garamond", serif;      */
+/*Fuente electrolize:     font-family: "Electrolize", serif;      */
+
+* {
+  box-sizing: border-box;
+}
+
+/*Estiliza el body */
+body {
+  font-family: "Electrolize", serif;
+  margin: 0;
+  background-color: #222222;
+}
+
+/* Estilizar la barra de navegacion */
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  font-family: "Grenze Gotisch", serif;
+  background-color: #872525;
+}
+
+/* Estilizar la barra de navegacion (2a parte) */
+.navbar a {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  color: #e0e0e0;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+/* Cambiar color en hover */
+.navbar a:hover:not(.active)  {
+  background-color: #581b1b;
+  color: #e0e0e0;
+}
+
+.active {
+  padding: 0px 0px;
+  background-color: #872525;
+}
+
+/* Contenedor de columna */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Crea dos columnas asimetricas que se ponen una a la otra */
+/* Barra lateral/columna izquierda */
+.side {
+  flex: 20%;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+
+.flex-container {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*Columna principal*/
+.main {
+  flex: 60%;
+  background-color: #161616;
+  color: rgb(210, 210, 210);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #581b1b;
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* Para cuando alguna imagen, menu o asi necesita bordes con sombra*/
+.bordes{
+    border: 8px solid rgb(190, 163, 73);
+ 				border-radius: 8px;
+				box-shadow: 10px 10px 10px #080808;
+  }
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background-color: #581b1b; /* For browsers that do not support gradients */
+  background-image: linear-gradient( #581b1b, #351616);
+  color: #e0e0e0;
+}
+
+
+/* Layout que responde a cuando la pantalla tenga menos de 700px de ancho, haciendo que las dos columnas se solapen una encima de la otra */
+@media screen and (max-width: 700px) {
+  .bordes{
+    border: 2px solid rgb(190, 163, 73);
+ 				border-radius: 8px;
+				box-shadow: 10px 10px 10px #080808;
+  }
+  .diva{
+    width: 33%;
+    height: 33% ;
+  }
+  .row{   
+    flex-direction: column;
+    background-color: #581b1b;
+    color: #e0e0e0;
+  }
+  .navbar {
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Grenze Gotisch", serif;
+  background-color: #254487;
+}
+  .navbar a {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  color: #e0e0e0;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 20px;
+  text-align: center;
+  }
+  .navbar a:hover {
+  background-color: #581b1b;
+  color: #e0e0e0;
+  }
+  .active {
+  background-color: #872525;
+}
+}
+
+</style>
+
+</head>
+
+
+
+<body style="background-image: url(imagenes/Fondo.jpg);">
+
+<!-- Header -->
+<div style="background-color: #161616;">
+    <img src="imagenes/portadilla.jpg" width="100%" height="35%" >
+  </div>
+  
+  <!-- Barra de navegacion -->
+  <div class="row">
+  
+  <div class="navbar">
+  
+    <a class="active"><img class="diva" src="imagenes/warhammerIcon.png" width="30px" height="30px"></a>
+    <a href="prueba.html"><b>Home</b></a>
+    <a href="Asuryani.html"><b>Asuryani</b></a>
+    <a href="Caos.html"><b>Caos</b></a>
+    <a href="Drukhari.html"><b>Drukhari</b></a>
+    <a href="ImperioDeLaHumanidad.html"><b>Humanos</b></a>
+    <a href="Necrones.html"><b>Necrones</b></a>
+    <a href="Orkos.html"><b>Orkos</b></a>
+    <a href="Tau.html"><b>Tau</b></a>
+    <a href="Tiranidos.html"><b>Tiranidos</b></a>
+  </div>
+
+ 
+  
+ <!-- Contenido en filas -->
+<div class="row">
+    <!-- Contenido lateral -->
+    <div class="side">
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="main">
+      
+      <h1>Tiranidos</h2>
+      <h5>Símbolo usado por el Imperio de la Hmanidad para representar a los Tiránidos</h5>
+      <img src="imagenes/Tiranidos/Tyranid.webp" alt="" style="width:300px;height:300px;">
+       
+        <br>
+        <p>Los Tiránidos son una especie compuesta extragaláctica de horribles xenos insectoides. En realidad, comprenden todo un ecosistema espacial compuesto de innumerables bioformas diferentes, todas ellas variaciones del mismo tema genético.</p>
+        <p>Los Tiránidos no se parecen a ninguna otra especie inteligente encontrada por la Humanidad. Son los depredadores supremos; para ellos, todos los seres vivos, desde el insecto más humilde hasta la civilización espacial más avanzada, son meras presas. Sólo ahora los habitantes de la galaxia se están dando cuenta de la magnitud de la amenaza; A menos que se pueda detener a los Tiránidos, significará nada menos que la extinción de toda la vida.</p>
+        <div class="flex-container">
+        <div>
+        <p>En última instancia, la especie Tiránida se dedica únicamente a su propia supervivencia, propagación y avance evolutivo. Los Tiránidos forman colectivamente un superorganismo monstruoso que viaja a través del universo en sus grandes flotas colmena de Naves Colmena biomecánicas, consumiendo sistemáticamente toda la demás biomateria para permitir su propia rápida evolución y reproducción.</p>
+        <p>Los Tiránidos son comparados con un enjambre galáctico que consume todo a su paso, alimentándose de mundos enteros y dejando sólo cáscaras muertas a su paso. Su amenaza es tal que un planeta desprotegido puede ser infestado y despojado de todo su material orgánico en cuestión de semanas solares sin siquiera frenar el avance de la flota colmena.</p>
+        <p>Todos los organismos Tiránidos son "sinápticos" (psíquicamente reactivos), y cada criatura Tiránida dentro de una flota colmena comparte y contribuye a una Mente Colmena comunitaria, que permite a los billones de seres que componen las flotas colmena Tiránidos comunicarse y organizarse instantáneamente en una escala asombrosa.</p>
+        <p>La mentalidad del enfoque tiránido de la guerra se puede describir con la frase "la cantidad tiene una cualidad propia". Desde el "humilde" Destripador hasta el mortal Tirano de Enjambre y más allá, la firma de las especies Tiránidas es que abruman a sus enemigos con su gran número, reproduciendo cantidades masivas de organismos altamente virulentos en un tiempo récord a partir de la sopa bioquímica que derivan de la biosferas de los mundos que consumen.</p>
+        <p>Los componentes de una flota colmena Tiránida viajan casi exclusivamente en grandes grupos conocidos como "enjambres" que poseen criaturas biomecánicas especializadas para destruir y consumir una amplia variedad de formas de vida presa.</p>
+        <p>Los Tiránidos han desarrollado métodos sofisticados para facilitar la transferencia genética a través de las fronteras de las especies. Como resultado, un objetivo importante de cualquier invasión tiránida es la adquisición de nuevos rasgos biológicos útiles de otras formas de vida.</p>
+        <p>Estos son utilizados por Hive Mind para mejorar la efectividad de los Tiránidos en el consumo de nuevos mundos para obtener más materias primas orgánicas necesarias para una mayor reproducción y evolución dirigida. Todos los Tiránidos son reproducidos por una única bioforma femenina altamente inteligente conocida como Reina Norn.</p>
+        <p>Las Reinas Norn de una flota colmena son los Tiránidos más importantes dentro de la flota, ya que si resultan heridos o asesinados, los Tiránidos no pueden reproducir su número a partir de la biomasa capturada. Como resultado, las Reinas Norn sólo se pueden encontrar en el corazón de los Barcos Colmena Tiránidos más grandes y mejor defendidos.</p>
+      </div>
+        <div><img src="imagenes/Tiranidos/Tiranidos_conducto_pecio.webp" alt="" style="width:250px;height:445px;">
+        <p>Tiránido en nave enemiga</p>
+        </div>
+       </div>
+
+       <p>Saltadores de Von Ryan</p>
+       <img src="imagenes/Tiranidos/Warhammer-40k_-Tyranids_-Von-Ryan_s-Leapers-Games-Workshop-27727260.webp" alt="" style="width:800px;height:437px;">
+
+    </div>
+  
+        <!-- Contenido lateral -->
+        <div class="side">
+        </div>
+
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <img class="diva" src="imagenes/wLogo.png" width="10%" height="0.1%" >
+  </div>
+
+</body>
+</html>

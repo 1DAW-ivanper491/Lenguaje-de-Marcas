@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title> CSS 3 </title>
+<style>
+
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
+        background-color: rgba(255, 0, 0, 0.9); opacity:0.6
+    
+    }
+    h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        background-color: hsl(180, 80%, 20%)
+    }
+    h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        background-color: hsl(25, 20%, 80%, 0.5)
+    }
+    h4{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        background-image: linear-gradient(blue, yellow, green, red)
+    }
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    b{
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+    
+    li{
+        list-style-type: none;
+    }
+    le {
+			list-style-type: none;
+			margin: 0;
+ 			padding: 0;
+ 			width: 40px;
+ 			background-color:  red;
+			border: 2px solid rgb(73, 73, 73);
+			border-radius: 8px;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+    lo {
+		list-style-type: none;
+        margin: 0;
+ 		padding: 0;
+ 		width: 50px;
+ 		background-color:  turquoise;
+	    border: 2px solid rgb(73, 73, 73);
+		border-radius: 8px;
+        display: block;
+	}
+    table{
+        padding: 20;
+        box-shadow: 10px 10px 5px lightblue;
+    }
+    .diva{
+        transition: width 2s;
+    }
+    .diva :hover{
+        width: 200px;
+    }
+</style>
+</head>
+
+
+<body>
+    <p>A: Opacidad</p>
+    <h1> Iván </h1>
+    <p>B: Tono</p>
+    <h2> Pérez </h2>
+    <h3> Díaz </h3>
+    <p>C: Gradientes</p>
+    <h4>C/ Manolito </h4>  
+
+        <div ; cellspacing="20"; >
+            <caption><b> Esquinas </b></caption>
+            <le> 
+            <p> Ivan </p>
+            </le>
+            <lo> 
+            <p> Perez </p>
+            <p> Diaz </p>
+            </lo>
+        </div >
+
+
+        <p><br/></p>
+        
+        <table border="5"; cellspacing="20"; >
+            <caption><b>tabla con separacion entre celdas</b></caption>
+            <tr> 
+            <td>fila1-celda1</td>
+            <td>fila1-celda2</td>
+            <td>fila1-celda3</td>
+            </tr>
+            <tr> 
+            <td>fila2-celda1</td>
+            <td>fila2-celda2</td>
+            <td>fila2-celda3</td>
+            </tr>
+        </table>
+        
+        <p><br/></p>
+        
+        
+        <table class="diva" border="1" ; align = "center";>
+            <caption><b>tabla simple</b></caption>
+            <tr> 
+                <td>fila1-celda1</td>
+                <td>fila1-celda2</td>
+                <td>fila1-celda3</td>
+            </tr>
+            <tr> 
+                <td>fila1-celda1</td>
+                <td>fila1-celda2</td>
+                <td>fila1-celda3</td>
+            </tr>
+        </table>
+       
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Principal</title>
+
+<link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Link de referencia a Google Fonts para obtener fuentes ajenas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+<style>
+
+/*Para conseguir las fuentes*/
+/*Fuente grence-gotisch:  font-family: "Grenze Gotisch", serif;   */
+/*Fuente almendra-sc:     font-family: "Almendra SC", serif;      */
+/*Fuente garamond:        font-family: "EB Garamond", serif;      */
+/*Fuente electrolize:     font-family: "Electrolize", serif;      */
+
+* {
+  box-sizing: border-box;
+}
+
+/*Estiliza el body */
+body {
+  font-family: "Electrolize", serif;
+  margin: 0;
+  background-color: #222222;
+}
+
+/* Estilizar la barra de navegacion */
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  font-family: "Grenze Gotisch", serif;
+  background-color: #872525;
+}
+
+/* Estilizar la barra de navegacion (2a parte) */
+.navbar a {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  color: #e0e0e0;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+/* Cambiar color en hover */
+.navbar a:hover:not(.active)  {
+  background-color: #581b1b;
+  color: #e0e0e0;
+}
+
+.active {
+  padding: 0px 0px;
+  background-color: #872525;
+}
+
+/* Contenedor de columna */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Crea dos columnas asimetricas que se ponen una a la otra */
+/* Barra lateral/columna izquierda */
+.side {
+  flex: 20%;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+
+.flex-container {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*Columna principal*/
+.main {
+  flex: 60%;
+  background-color: #161616;
+  color: rgb(210, 210, 210);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #581b1b;
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* Para cuando alguna imagen, menu o asi necesita bordes con sombra*/
+.bordes{
+    border: 8px solid rgb(190, 163, 73);
+ 				border-radius: 8px;
+				box-shadow: 10px 10px 10px #080808;
+  }
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background-color: #581b1b; /* For browsers that do not support gradients */
+  background-image: linear-gradient( #581b1b, #351616);
+  color: #e0e0e0;
+}
+
+
+/* Layout que responde a cuando la pantalla tenga menos de 700px de ancho, haciendo que las dos columnas se solapen una encima de la otra */
+@media screen and (max-width: 700px) {
+  .bordes{
+    border: 2px solid rgb(190, 163, 73);
+ 				border-radius: 8px;
+				box-shadow: 10px 10px 10px #080808;
+  }
+  .diva{
+    width: 33%;
+    height: 33% ;
+  }
+  .row{   
+    flex-direction: column;
+    background-color: #581b1b;
+    color: #e0e0e0;
+  }
+  .navbar {
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Grenze Gotisch", serif;
+  background-color: #254487;
+}
+  .navbar a {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  color: #e0e0e0;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 20px;
+  text-align: center;
+  }
+  .navbar a:hover {
+  background-color: #581b1b;
+  color: #e0e0e0;
+  }
+  .active {
+  background-color: #872525;
+}
+}
+
+</style>
+
+</head>
+
+
+
+<body style="background-image: url(imagenes/Fondo.jpg);">
+
+<!-- Header -->
+<div style="background-color: #161616;">
+    <img src="imagenes/portadilla.jpg" width="100%" height="35%" >
+  </div>
+  
+  <!-- Barra de navegacion -->
+  <div class="row">
+  
+  <div class="navbar">
+  
+    <a class="active"><img class="diva" src="imagenes/warhammerIcon.png" width="30px" height="30px"></a>
+    <a href="prueba.html"><b>Home</b></a>
+    <a href="Asuryani.html"><b>Asuryani</b></a>
+    <a href="Caos.html"><b>Caos</b></a>
+    <a href="Drukhari.html"><b>Drukhari</b></a>
+    <a href="ImperioDeLaHumanidad.html"><b>Humanos</b></a>
+    <a href="Necrones.html"><b>Necrones</b></a>
+    <a href="Orkos.html"><b>Orkos</b></a>
+    <a href="Tau.html"><b>Tau</b></a>
+    <a href="Tiranidos.html"><b>Tiranidos</b></a>
+  </div>
+
+ 
+  
+ <!-- Contenido en filas -->
+<div class="row">
+    <!-- Contenido lateral -->
+    <div class="side">
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="main">
+      
+      <h1>Drukhari</h2>
+      <h5>Runa que representa a los Drukhari</h5>
+      <img src="imagenes/Drukhari/DrukhariRune.webp" alt="" style="width:181px;height:312px;">
+       
+        <br>
+        <p>Los Drukhari (Aeldarix malum) (pronunciado Druh-KAR-ee) o "Oscuros" en el Léxico Aeldari, también conocidos por los forasteros como los Eldar Oscuros, son una estirpe Aeldari abandonada y corrupta, las contrapartes sádicas y maliciosas de los Asuryani. Al igual que sus primos de los mundos astronave, los Drukhari son una raza alienígena antigua y muy avanzada de humanoides feérico.</p>
+        <p>Los Drukhari son únicos entre las especies inteligentes de la Vía Láctea porque no viven en uno o más mundos asentados, sino que la mayor parte de su población se concentra en una repugnante ciudad-estado, la Ciudad Oscura de Commorragh, que se encuentra dentro del Immaterium "ordenado" de la Red Aeldari.</p>
+        <div class="flex-container">
+        <div>
+        <p>Los Drukhari son principalmente piratas y esclavistas que se aprovechan de objetivos en toda la galaxia para alimentar sus impíos apetitos por las almas de otros seres sintientes, un deseo terrible llamado "la Sed", aunque a veces son utilizados como mercenarios por otras especies espaciales.</p>
+        <p>Existen muchos Dioses del Caos menores dentro del Reino del Caos, pero los cuatro Dioses del Caos principales (Khorne, Tzeentch, Slaanesh y Nurgle) son particularmente infames y poderosos, y poseen una gran influencia sobre el mundo. Cada uno encarna un aspecto particular y muy básico de la existencia mortal, siendo ira, cambio, placer y muerte, respectivamente.</p>        
+        <p>Los Drukhari son la encarnación viviente de todo lo que hay de desenfrenado y cruel en el carácter Aeldari. Altamente inteligentes y tortuosos hasta el punto de la obsesión, estos piratas se deleitan con el dolor físico y emocional de los demás, porque alimentarse de los residuos psíquicos del sufrimiento es la única manera de evitar el lento consumo de los suyos por parte del Dios del Caos Slaanesh. almas.</p>
+        <p>A pesar de su belleza física según los estándares humanos, los Drukhari siguen siendo monstruos repugnantes. Cuando se ven con la visión de bruja de un psíquico, se revelan las almas negras de los Drukhari, ya que eternamente tienen sed sólo de la energía psíquica de la angustia y el tormento de otros seres pensantes para llenar su propio vacío infinito.</p>
+        <p>A diferencia de sus primos Aeldari del Mundo Astronave, los Drukhari no integran sus aún poderosas habilidades psíquicas latentes en su cultura y, de hecho, sienten un gran desdén por los psíquicos de cualquier tipo. Esto se debe a que para los Drukhari, el uso de habilidades psíquicas sólo atraería aún más la atención de "La que tiene sed" (Slaanesh) sobre ellos, y sus almas ya corren suficiente riesgo de ser devoradas por el Príncipe del Caos.</p>
+      </div>
+        <div><img src="imagenes/Drukhari/DEWarrior.webp" alt="" style="width:261px;height:359px;">
+        <p>Guerrero Drukhari</p>
+        </div>
+       </div>
+
+       <p>Figuras de los Drukhari</p>
+       <img src="imagenes/Drukhari/Captura de pantalla 2025-01-19 165407.png" alt="" style="width:800px;height:437px;">
+
+    </div>
+  
+        <!-- Contenido lateral -->
+        <div class="side">
+        </div>
+
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <img class="diva" src="imagenes/wLogo.png" width="10%" height="0.1%" >
+  </div>
+
+</body>
+</html>
